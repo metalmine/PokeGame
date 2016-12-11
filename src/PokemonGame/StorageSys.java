@@ -3,10 +3,14 @@ package PokemonGame;
 import Pokedex.Pokemon;
 
 public class StorageSys {
-    private final Pokemon[] storage = new Pokemon[1000];
+    private  Pokemon[] storage = new Pokemon[6];
 
-    public void addPokemon(Pokemon pokemon, int team) {
-        storage[team] = pokemon;
+    public Pokemon[] getStorage() {
+        return storage;
+    }
+
+    public void addPokemon(Pokemon pokemon, int slot) {
+        storage[slot] = pokemon;
     }
 
     public Pokemon retrievePokemon(int poke) {
@@ -32,5 +36,11 @@ public class StorageSys {
 
     public void getSummary(int poke) {
         storage[poke].getSummary();
+    }
+
+    public void initiateStorage(){
+        for(Pokemon pokemon:this.storage){
+            pokemon = new Pokemon();
+        }
     }
 }

@@ -9,9 +9,11 @@ public class Game {
         Scanner scan = new Scanner(System.in);
         Trainer mc = new Trainer();
         StorageSys BillsPC = new StorageSys();
+        BillsPC.initiateStorage();
         int choice = 0;
         boolean running = true;
         StorageSys mainTrainer = new StorageSys();
+        mainTrainer.initiateStorage();
         mc.setTeamID(mainTrainer);
         while (running) {
             if (null == mc.getTeamID().retrievePokemon(0)) {
@@ -67,8 +69,7 @@ public class Game {
     }
 
     private static void pc(StorageSys PC, StorageSys Team) { // PC system main loop.
-        int choice = 0;
-        int PCBox = 1;
+        int choice;
         Scanner scan = new Scanner(System.in);
         boolean running = true;
         while (running) {
@@ -83,28 +84,56 @@ public class Game {
             switch (choice) {
                 case 1:
                     int teamSlot = 1;
+                    int pcSlot = 1;
                     Pokemon teamPoke;
-                    Pokemon pcPoke;
+                    Pokemon pcPoke = new Pokemon();
                     System.out.println("Which Pokemon would you like to deposit?");
-                    for (int i = 1; i < 6; i++) {
-                        teamPoke = Team.retrievePokemon(i - 1);
-                        System.out.print("Slot " + i + ": ");
-                        if (0 == teamPoke.getLevel()) {
-                            System.out.println(i + ") EMPTY");
-                        } else {
-                            System.out.println(i + ") " + teamPoke.getName());
+                    for(Pokemon pokemon:Team.getStorage()){
+                        if("N/A" == pokemon.getName()){
+                            System.out.println("Empty");
                         }
+                        else {
+                            System.out.println(teamSlot + "." + pokemon.getName());
+                        }
+                        teamSlot++;
                     }
-                    teamPoke = Team.retrievePokemon(scan.nextInt());
-
+                    teamSlot=scan.nextInt();
+                    teamPoke = Team.retrievePokemon(teamSlot);
+                    System.out.println("Which slot would you like to put the pokemon in?");
+                    for(Pokemon pokemon:PC.getStorage()){
+                        if("N/A" == pokemon.getName()){
+                            System.out.println("Empty");
+                        }
+                        else {
+                            System.out.println(pcSlot + "." + pokemon.getName());
+                        }
+                        pcSlot++;
+                    }
+                    pcSlot = scan.nextInt();
+                    pcPoke = PC.retrievePokemon(pcSlot);
+                    PC.addPokemon(teamPoke,pcSlot);
+                    Team.addPokemon(pcPoke,teamSlot);
                     break;
                 case 2:
                     break;
                 case 3:
                     break;
                 case 4:
-                    Team.getSummary(0);
-                    break;
+                    while(true) {
+                        System.out.println("Which Pokemon's information would you like to see?");
+                        int count = 0;
+                        for(Pokemon pokemon:Team.getStorage()){
+                            if("N/A" == pokemon.getName()){
+                                System.out.println("Empty");
+                            }
+                            else {
+                                System.out.println(count + "." + pokemon.getName());
+                            }
+                            count++;
+                        }
+                        Team.getSummary(scan.nextInt());
+                        break;
+                    }
                 case 5:
                     System.out.println("Thank you for using the Pokemon Storage System!\nCome back anytime!");
                     running = false;

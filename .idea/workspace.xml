@@ -41,11 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PokemonGame/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="56" column="82" selection-start-line="56" selection-start-column="82" selection-end-line="56" selection-end-column="82" />
+            <state relative-caret-position="657">
+              <caret line="114" column="51" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -77,11 +77,17 @@
       <file leaf-file-name="StorageSys.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PokemonGame/StorageSys.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="731">
+              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
               <folding>
-                <element signature="e#185#186#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
+                <element signature="e#157#158#0" expanded="true" />
+                <element signature="e#187#188#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+                <element signature="e#992#993#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Battle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Battle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PokemonGame/Battle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
-              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+              <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,8 +140,8 @@
       <file leaf-file-name="Pokemon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Pokedex/Pokemon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="366" column="0" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
+            <state relative-caret-position="395">
+              <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="25" />
               <folding>
                 <element signature="e#557#558#0" expanded="true" />
                 <element signature="e#585#586#0" expanded="true" />
@@ -178,13 +184,13 @@
         <option value="$PROJECT_DIR$/src/Pokedex/Area.java" />
         <option value="$PROJECT_DIR$/src/PokemonGame/Trainer.java" />
         <option value="$PROJECT_DIR$/src/Pokedex/Pokemon.java" />
-        <option value="$PROJECT_DIR$/src/PokemonGame/StorageSys.java" />
         <option value="$PROJECT_DIR$/src/Pokedex/PhysDmg.java" />
         <option value="$PROJECT_DIR$/src/Pokedex/SpeDmg.java" />
         <option value="$PROJECT_DIR$/src/Pokedex/Dmg.java" />
         <option value="$PROJECT_DIR$/src/Pokedex/Moves.java" />
-        <option value="$PROJECT_DIR$/src/PokemonGame/Game.java" />
         <option value="$PROJECT_DIR$/src/PokemonGame/Battle.java" />
+        <option value="$PROJECT_DIR$/src/PokemonGame/StorageSys.java" />
+        <option value="$PROJECT_DIR$/src/PokemonGame/Game.java" />
       </list>
     </option>
   </component>
@@ -244,42 +250,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PokeGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PokeGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PokeGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PokemonGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PokeGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PokeGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Pokedex" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -656,8 +626,14 @@
         <state relative-caret-position="238">
           <caret line="18" column="70" selection-start-line="18" selection-start-column="70" selection-end-line="18" selection-end-column="70" />
           <folding>
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -763,8 +739,14 @@
         <state relative-caret-position="493">
           <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -805,14 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PokemonGame/Encounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PokemonGame/Trainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -820,43 +794,6 @@
           <folding>
             <element signature="e#357#358#0" expanded="true" />
             <element signature="e#393#394#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PokemonGame/StorageSys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PokemonGame/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="56" column="82" selection-start-line="56" selection-start-column="82" selection-end-line="56" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pokedex/Pokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="366" column="0" selection-start-line="366" selection-start-column="0" selection-end-line="366" selection-end-column="0" />
-          <folding>
-            <element signature="e#557#558#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="method#getSpD#0;class#Pokemon#0" expanded="false" />
-            <element signature="method#getSpA#0;class#Pokemon#0" expanded="false" />
-            <element signature="method#getDef#0;class#Pokemon#0" expanded="false" />
-            <element signature="method#getAtk#0;class#Pokemon#0" expanded="false" />
-            <element signature="method#getSpecie#0;class#Pokemon#0" expanded="false" />
-            <element signature="method#getName#0;class#Pokemon#0" expanded="false" />
-            <element signature="method#getLevel#0;class#Pokemon#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -887,13 +824,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PokemonGame/Encounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PokemonGame/Battle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PokemonGame/StorageSys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding>
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#992#993#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokedex/Pokemon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="25" />
+          <folding>
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="method#getSpD#0;class#Pokemon#0" expanded="false" />
+            <element signature="method#getSpA#0;class#Pokemon#0" expanded="false" />
+            <element signature="method#getDef#0;class#Pokemon#0" expanded="false" />
+            <element signature="method#getAtk#0;class#Pokemon#0" expanded="false" />
+            <element signature="method#getSpecie#0;class#Pokemon#0" expanded="false" />
+            <element signature="method#getName#0;class#Pokemon#0" expanded="false" />
+            <element signature="method#getLevel#0;class#Pokemon#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PokemonGame/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="114" column="51" selection-start-line="114" selection-start-column="51" selection-end-line="114" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>

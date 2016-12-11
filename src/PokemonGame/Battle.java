@@ -14,7 +14,6 @@ public class Battle {
         Pokemon Attacker = team.retrievePokemon(0);
         double hp1 = poke1.getHp();
         double hp2 = poke2.getHp();
-        boolean continueBattle = true;
         boolean choiceLoop = true;
         boolean combat = true;
         while (choiceLoop)
@@ -54,14 +53,11 @@ public class Battle {
                             System.out.println("You have defeated"+poke1.getName());
                             combat=false;
                             choiceLoop=false;
-                            continueBattle=false;
                             return 1;
                         }
                         else if(hp2<=0){
                             System.out.println(poke2.getName()+" has fainted. You send in the next pokemon on your team.");
                             combat=false;
-                            choiceLoop=false;
-                            continueBattle=false;
                             return 2;
                         }
                     }
@@ -75,7 +71,6 @@ public class Battle {
                         System.out.println("You have successfully run from " + poke1.getName());
                         combat=false;
                         choiceLoop=false;
-                        continueBattle=false;
                         return 3;
                     }
                 default:
