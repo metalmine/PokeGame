@@ -29,7 +29,8 @@ public class StorageSys {
     public void releasePokemon(int team) {
         storage[team] = null;
     }
-    public void getSummary(int poke){
+
+    public void getSummary(int poke) {
         storage[poke].getSummary();
     }
 }

@@ -7,35 +7,15 @@ import java.util.Scanner;
 public class Game {
     public static void main(String[] args) { // Game main loop
         Scanner scan = new Scanner(System.in);
-        String name;
         Trainer[] trainers = new Trainer[100];
         StorageSys BillsPC = new StorageSys();
         int choice = 0;
         boolean running = true;
-        char agree = ' ';
+        StorageSys mainTrainer = new StorageSys();
+        trainers[0].setTeamID(mainTrainer);
         while (running) {
             if (null == trainers[0]) {
-                System.out.println("Welcome to the World of Pokemon!");
-                System.out.println("What is your name?");
-                int confirm = 1; // Checks for [y/n] agreement adherence.
-                while (true) {
-                    name = scan.nextLine();
-                    while (confirm == 1) {
-                        System.out.println("Is your name " + name + "? [y/n]]");
-                        agree = scan.nextLine().charAt(0);
-                        if (agree == 'y' || agree == 'Y' || agree == 'n' || agree == 'N') {
-                            confirm = 0;
-                        } else {
-                            System.out.println("You have entered an invalid input, try again.\nPress ENTER to CONTINUE.");
-                        }
-                    }
-                    if (agree == 'y' || agree == 'Y') {
-                        trainers[0].setName(name);
-                        break;
-                    }
-                }
-                StorageSys mainTrainer = new StorageSys();
-                trainers[0].setTeamID(mainTrainer);
+                createTrainer(trainers);
                 System.out.println("Which pokemon would you like to start with?");
                 System.out.println("************************************************");
                 System.out.println("*    >Grass<          >Fire<        >Water<    *");
@@ -81,24 +61,25 @@ public class Game {
                 running = false;
             } else {
                 switch (choice) {
-                    case 1:Battle wild = new Battle(Encounter.wildPoke(1),trainers[0].getTeamID().retrievePokemon(0));
-
+                    case 1:
+                        Encounter wildEncounter = new Encounter();
+                        Battle wild = new Battle(wildEncounter.wildPoke(1), trainers[0].getTeamID().retrievePokemon(0));
                         break;
                     case 2:
-                        int endMessage = pc(BillsPC, trainers[0].getTeamID());
-                        if (endMessage == 1) {
-                            System.out.println("Thank you for using the Pokemon Storage System!\nCome back anytime!");
-                        }
+                        pc(BillsPC, trainers[0].getTeamID());
+                        break;
+                    case 3:
                         break;
                 }
             }
         }
     }
 
-    private static int pc(StorageSys PC, StorageSys Team) { // PC system main loop.
+    private static void pc(StorageSys PC, StorageSys Team) { // PC system main loop.
         int choice = 0;
         int PCBox = 1;
         Scanner scan = new Scanner(System.in);
+
         while (true) {
             System.out.println("What would you like to do?");
             System.out.println("1. Deposit a pokemon");
@@ -110,17 +91,17 @@ public class Game {
             scan.nextLine();
             switch (choice) {
                 case 1:
-                    int teamSlot =1;
+                    int teamSlot = 1;
                     Pokemon teamPoke;
                     Pokemon pcPoke;
                     System.out.println("Which Pokemon would you like to deposit?");
                     for (int i = 1; i < 6; i++) {
-                        teamPoke = Team.retrievePokemon(i-1);
+                        teamPoke = Team.retrievePokemon(i - 1);
                         System.out.print("Slot " + i + ": ");
                         if (0 == teamPoke.getLevel()) {
-                            System.out.println(i+") EMPTY");
+                            System.out.println(i + ") EMPTY");
                         } else {
-                            System.out.println(i+") "+teamPoke.getName());
+                            System.out.println(i + ") " + teamPoke.getName());
                         }
                     }
                     teamPoke = Team.retrievePokemon(scan.nextInt());
@@ -130,10 +111,33 @@ public class Game {
                     break;
                 case 3:
                     break;
-                case 4:Team.getSummary(0);
+                case 4:
+                    Team.getSummary(0);
                     break;
-                case 6:
-                    return 1;
+                case 5:
+                    System.out.println("Thank you for using the Pokemon Storage System!\nCome back anytime!");
+                    break;
+            }
+        }
+    }
+
+    private static void createTrainer(Trainer[] trainers) {
+        int choice;
+        char agree;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Welcome to the World of Pokemon!");
+        System.out.println("What is your name?");
+        int confirm = 1; // Checks for [y/n] agreement adherence.
+        while (true) {
+            trainers[0].setName(scan.nextLine());
+            while (confirm == 1) {
+                System.out.println("Is your name " + trainers[0].getName() + "? [y/n]]");
+                agree = scan.nextLine().charAt(0);
+                if (agree == 'y' || agree == 'Y' || agree == 'n' || agree == 'N') {
+                    confirm = 0;
+                } else {
+                    System.out.println("You have entered an invalid input, try again.\nPress ENTER to CONTINUE.");
+                }
             }
         }
     }

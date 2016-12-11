@@ -2,6 +2,8 @@ package PokemonGame;
 
 public class Trainer {
     private String name;
+    private char gender;
+    private StorageSys teamID;
 
     public String getName() {
         return name;
@@ -11,7 +13,6 @@ public class Trainer {
         this.name = name;
     }
 
-    private char gender;
 
     public char getGender() {
         return gender;
@@ -29,6 +30,5 @@ public class Trainer {
         this.teamID = teamID;
     }
 
-    private StorageSys teamID;
 
 }
