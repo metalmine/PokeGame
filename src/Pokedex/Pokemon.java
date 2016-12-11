@@ -21,7 +21,7 @@ public class Pokemon {
     private double spA;
     private double spD;
     private double spe;
-    final Moves[] maxMovesLearned = new Moves[4];
+    final Moves[] moves = new Moves[2];
 
     public int getId() {
         return id;
@@ -169,6 +169,7 @@ public class Pokemon {
                 this.spA = (this.level*1.21);
                 this.spD = (this.level*1.21);
                 this.spe = (this.level*0.85);
+                this.moves[0] = Moves(0);
                 break;
             case 2:
                 this.level = 5;

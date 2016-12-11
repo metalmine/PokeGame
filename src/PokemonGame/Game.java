@@ -7,25 +7,18 @@ import java.util.Scanner;
 public class Game {
     public static void main(String[] args) { // Game main loop
         Scanner scan = new Scanner(System.in);
-        Trainer[] trainers = new Trainer[100];
+        Trainer mc = new Trainer();
         StorageSys BillsPC = new StorageSys();
         int choice = 0;
         boolean running = true;
         StorageSys mainTrainer = new StorageSys();
-        trainers[0].setTeamID(mainTrainer);
+        mc.setTeamID(mainTrainer);
         while (running) {
-            if (null == trainers[0]) {
-                createTrainer(trainers);
+            if (null == mc.getTeamID().retrievePokemon(0)) {
+                createTrainer(mc);
                 System.out.println("Which pokemon would you like to start with?");
                 System.out.println("************************************************");
                 System.out.println("*    >Grass<          >Fire<        >Water<    *");
-                /*System.out.println("************************************************");
-                System.out.println("*|      /^^\\  1|      /---\\   |              |*");
-                System.out.println("*| /`---'\\  \\2|     / @ @ |  |              |*");
-                System.out.println("*|/ @  @  \\ / 1|    ^ \\  w  /   |              |*");
-                System.out.println("*|\\  W    /  | |   \\ \\ \\  |   |              |*");
-                System.out.println("*| ̅¯V¯̅¯̅¯̅\\V̅¯̅¯̅¯̅̅V1|    \\ \\/    |  |              |*");
-                System.out.println("*|              |              |              |*");*/
                 System.out.println("************************************************");
                 System.out.println("*|  1.Bulbasaur |  2.Charmander|  3.Squirtle  |*");
                 System.out.println("************************************************");
@@ -39,15 +32,15 @@ public class Game {
                 switch (choice) {
                     case 1:
                         Pokemon starterBulba = new Pokemon(1);
-                        trainers[0].getTeamID().addPokemon(starterBulba, 0);
+                        mc.getTeamID().addPokemon(starterBulba, 0);
                         break;
                     case 2:
                         Pokemon starterCharm = new Pokemon(2);
-                        trainers[0].getTeamID().addPokemon(starterCharm, 0);
+                        mc.getTeamID().addPokemon(starterCharm, 0);
                         break;
                     case 3:
                         Pokemon starterSquir = new Pokemon(3);
-                        trainers[0].getTeamID().addPokemon(starterSquir, 0);
+                        mc.getTeamID().addPokemon(starterSquir, 0);
                         break;
                 }
             }
@@ -57,20 +50,18 @@ public class Game {
             System.out.println("3. Exit game");
             choice = scan.nextInt();
             scan.nextLine();
-            if (choice == 3) {
-                running = false;
-            } else {
-                switch (choice) {
-                    case 1:
-                        Encounter wildEncounter = new Encounter();
-                        Battle wild = new Battle(wildEncounter.wildPoke(1), trainers[0].getTeamID().retrievePokemon(0));
-                        break;
-                    case 2:
-                        pc(BillsPC, trainers[0].getTeamID());
-                        break;
-                    case 3:
-                        break;
-                }
+            switch (choice) {
+                case 1:
+                    Encounter wildEncounter = new Encounter();
+                    Battle wildBattle = new Battle();
+                    wildBattle.newBattle(wildEncounter.wildPoke(1), mc.getTeamID().retrievePokemon(0));
+                    break;
+                case 2:
+                    pc(BillsPC, mc.getTeamID());
+                    break;
+                case 3:
+                    running = false;
+                    break;
             }
         }
     }
@@ -79,8 +70,8 @@ public class Game {
         int choice = 0;
         int PCBox = 1;
         Scanner scan = new Scanner(System.in);
-
-        while (true) {
+        boolean running = true;
+        while (running) {
             System.out.println("What would you like to do?");
             System.out.println("1. Deposit a pokemon");
             System.out.println("2. Withdraw a pokemon");
@@ -116,28 +107,27 @@ public class Game {
                     break;
                 case 5:
                     System.out.println("Thank you for using the Pokemon Storage System!\nCome back anytime!");
+                    running = false;
                     break;
             }
         }
     }
 
-    private static void createTrainer(Trainer[] trainers) {
+    private static void createTrainer(Trainer mc) {
         int choice;
         char agree;
         Scanner scan = new Scanner(System.in);
         System.out.println("Welcome to the World of Pokemon!");
         System.out.println("What is your name?");
         int confirm = 1; // Checks for [y/n] agreement adherence.
-        while (true) {
-            trainers[0].setName(scan.nextLine());
+            mc.setName(scan.nextLine());
             while (confirm == 1) {
-                System.out.println("Is your name " + trainers[0].getName() + "? [y/n]]");
-                agree = scan.nextLine().charAt(0);
-                if (agree == 'y' || agree == 'Y' || agree == 'n' || agree == 'N') {
-                    confirm = 0;
-                } else {
-                    System.out.println("You have entered an invalid input, try again.\nPress ENTER to CONTINUE.");
-                }
+            System.out.println("Is your name " + mc.getName() + "? [y/n]]");
+            agree = scan.nextLine().charAt(0);
+            if (agree == 'y' || agree == 'Y' || agree == 'n' || agree == 'N') {
+                confirm = 0;
+            } else {
+                System.out.println("You have entered an invalid input, try again.\nPress ENTER to CONTINUE.");
             }
         }
     }
