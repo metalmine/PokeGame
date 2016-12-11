@@ -9,6 +9,7 @@ public class Moves {
     private int mvAcc;
     private String type;
     private int pp;
+    private String ele;
 
     public String getName() {
         return name;
@@ -59,18 +60,7 @@ public class Moves {
         this.mvAcc = mvAcc;
     }
 
-    public double crit() {
-        double modifier = 1;
-        Random s = new Random(); // random Crit
-        int x = s.nextInt(100);
-        if (x < 10) {
-            modifier *= 1.5;
-        }
-        Random d = new Random();
-        int y = d.nextInt(15);
-        modifier *= (0.8 + (y / 100));
-        return modifier;
-    }
+
 
     private String[] names = {"Quick Attack", "Tackle", "Hyper Beam", "Heavy Slam", "Aerial Ace",
             "Razor Leaf", "Ice Beam", "Flame Thrower", "Liquidation", "Hydro Pump", "Vacuum Wave", "Slash", "X-Scissor",

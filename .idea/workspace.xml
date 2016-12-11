@@ -23,11 +23,10 @@
             <file leaf-file-name="Moves.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/Pokedex/Moves.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="600">
-                    <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+                  <state relative-caret-position="601">
+                    <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
                     <folding>
                       <element signature="method#getPp#0;class#Moves#0" expanded="false" />
-                      <element signature="method#crit#0;class#Moves#0" expanded="false" />
                     </folding>
                   </state>
                 </provider>
@@ -100,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Battle.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Battle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PokemonGame/Battle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="443">
+              <caret line="70" column="75" selection-start-line="70" selection-start-column="75" selection-end-line="70" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#DrawHP#0;class#Battle#0" expanded="false" />
@@ -123,12 +122,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pokemon.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Pokemon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Pokedex/Pokemon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="172" column="42" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
+            <state relative-caret-position="243">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
               <folding>
+                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
                 <element signature="method#getSpD#0;class#Pokemon#0" expanded="false" />
                 <element signature="method#getSpA#0;class#Pokemon#0" expanded="false" />
                 <element signature="method#getDef#0;class#Pokemon#0" expanded="false" />
@@ -137,6 +138,16 @@
                 <element signature="method#getName#0;class#Pokemon#0" expanded="false" />
                 <element signature="method#getLevel#0;class#Pokemon#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dmg.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Pokedex/Dmg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,16 +176,16 @@
         <option value="$PROJECT_DIR$/src/Pokedex/SpMoves.java" />
         <option value="$PROJECT_DIR$/src/Pokedex/Damage.java" />
         <option value="$PROJECT_DIR$/src/Pokedex/SpeDmg.java" />
-        <option value="$PROJECT_DIR$/src/Pokedex/PhysDmg.java" />
-        <option value="$PROJECT_DIR$/src/Pokedex/Dmg.java" />
         <option value="$PROJECT_DIR$/src/PokemonGame/Encounter.java" />
         <option value="$PROJECT_DIR$/src/PokemonGame/StorageSys.java" />
         <option value="$PROJECT_DIR$/src/Pokedex/Area.java" />
         <option value="$PROJECT_DIR$/src/PokemonGame/Trainer.java" />
         <option value="$PROJECT_DIR$/src/PokemonGame/Game.java" />
+        <option value="$PROJECT_DIR$/src/Pokedex/PhysDmg.java" />
+        <option value="$PROJECT_DIR$/src/Pokedex/Dmg.java" />
+        <option value="$PROJECT_DIR$/src/Pokedex/Pokemon.java" />
         <option value="$PROJECT_DIR$/src/PokemonGame/Battle.java" />
         <option value="$PROJECT_DIR$/src/Pokedex/Moves.java" />
-        <option value="$PROJECT_DIR$/src/Pokedex/Pokemon.java" />
       </list>
     </option>
   </component>
@@ -586,7 +597,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14583333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14583333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -657,6 +668,8 @@
         <state relative-caret-position="4403">
           <caret line="314" column="41" selection-start-line="314" selection-start-column="41" selection-end-line="314" selection-end-column="41" />
           <folding>
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
             <element signature="method#getSpD#0;class#Pokemon#0" expanded="false" />
             <element signature="method#getSpA#0;class#Pokemon#0" expanded="false" />
             <element signature="method#getDef#0;class#Pokemon#0" expanded="false" />
@@ -693,7 +706,6 @@
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
             <element signature="method#getPp#0;class#Moves#0" expanded="false" />
-            <element signature="method#crit#0;class#Moves#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -735,6 +747,8 @@
         <state relative-caret-position="2088">
           <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="31" />
           <folding>
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
             <element signature="method#getSpD#0;class#Pokemon#0" expanded="false" />
             <element signature="method#getSpA#0;class#Pokemon#0" expanded="false" />
             <element signature="method#getDef#0;class#Pokemon#0" expanded="false" />
@@ -777,14 +791,6 @@
     <entry file="file://$PROJECT_DIR$/src/PokemonGame/PokemonStorageSystem.java" />
     <entry file="file://$PROJECT_DIR$/src/Pokedex/Ability.java" />
     <entry file="file://$PROJECT_DIR$/src/Pokedex/givenPokemon.java" />
-    <entry file="file://$PROJECT_DIR$/src/Pokedex/PhysDmg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Pokedex/Area.java" />
     <entry file="file://$PROJECT_DIR$/src/PokemonGame/StorageSys.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -831,25 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pokedex/Dmg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PokemonGame/Battle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#DrawHP#0;class#Battle#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PokemonGame/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -858,22 +845,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Pokedex/Moves.java">
+    <entry file="file://$PROJECT_DIR$/src/Pokedex/PhysDmg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
-          <folding>
-            <element signature="method#getPp#0;class#Moves#0" expanded="false" />
-            <element signature="method#crit#0;class#Moves#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokedex/Dmg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Pokedex/Pokemon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="172" column="42" selection-start-line="172" selection-start-column="42" selection-end-line="172" selection-end-column="42" />
+        <state relative-caret-position="243">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding>
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
             <element signature="method#getSpD#0;class#Pokemon#0" expanded="false" />
             <element signature="method#getSpA#0;class#Pokemon#0" expanded="false" />
             <element signature="method#getDef#0;class#Pokemon#0" expanded="false" />
@@ -881,6 +875,27 @@
             <element signature="method#getSpecie#0;class#Pokemon#0" expanded="false" />
             <element signature="method#getName#0;class#Pokemon#0" expanded="false" />
             <element signature="method#getLevel#0;class#Pokemon#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Pokedex/Moves.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+          <folding>
+            <element signature="method#getPp#0;class#Moves#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PokemonGame/Battle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="70" column="75" selection-start-line="70" selection-start-column="75" selection-end-line="70" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#DrawHP#0;class#Battle#0" expanded="false" />
           </folding>
         </state>
       </provider>

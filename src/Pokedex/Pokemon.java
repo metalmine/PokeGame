@@ -23,6 +23,10 @@ public class Pokemon {
     private double spe;
     final Moves[] moves = new Moves[2];
 
+    public Moves[] getMoves() {
+        return moves;
+    }
+
     public int getId() {
         return id;
     }
