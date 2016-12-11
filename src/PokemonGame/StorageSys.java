@@ -3,7 +3,7 @@ package PokemonGame;
 import Pokedex.Pokemon;
 
 public class StorageSys {
-    private final Pokemon[] storage = new Pokemon[6];
+    private final Pokemon[] storage = new Pokemon[1000];
 
     public void addPokemon(Pokemon pokemon, int team) {
         storage[team] = pokemon;

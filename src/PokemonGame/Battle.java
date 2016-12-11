@@ -1,9 +1,6 @@
 package PokemonGame;
 
-import Pokedex.Dmg;
-import Pokedex.Moves;
-import Pokedex.PhysDmg;
-import Pokedex.Pokemon;
+import Pokedex.*;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -14,8 +11,11 @@ public class Battle {
         Scanner scan = new Scanner(System.in);
         Pokemon poke1 = Defender;
         Pokemon poke2 = Attacker;
+        double hp1 = poke1.getHp();
+        double hp2 = poke2.getHp();
         boolean continueBattle = true;
         boolean choiceLoop = true;
+        boolean combat = true;
         while (continueBattle) {
             DrawBattle(poke1, poke2);
             while (choiceLoop) ;
@@ -23,7 +23,36 @@ public class Battle {
                 DrawMenu();
                 switch (scan.nextInt()) {
                     case 1:
-                        DrawAttacks(poke2);
+                        while(combat){
+                            Moves[] atkMove = poke2.getMoves();
+                            DrawAttacks(poke2);
+                            Random s = new Random(); // defending pokemon's attack
+                            int x = s.nextInt(100);
+                            int y;
+                            if(x>=50){
+                                y=0;
+                            }else{
+                                y=1;
+                            }
+                            switch (scan.nextInt()){
+                                case 1:
+                                    hp2-=dmg(atkMove[0],poke1,poke2);
+                                    hp1-=dmg(atkMove[y],poke2,poke1);
+                                    break;
+                                case 2:
+                                    hp2-=dmg(atkMove[1],poke1,poke2);
+                                    hp1-=dmg(atkMove[y],poke2,poke1);
+                                    break;
+                            }
+                            if(hp1<=0){
+                                System.out.println("You have defeated"+poke1.getName());
+                                combat=false;
+                            }
+                            else if(hp2<=0){
+                                System.out.println(poke2.getName()+" has fainted. You send in the next pokemon on your team.");
+
+                            }
+                        }
                         break;
                     case 2:
                         Random s = new Random(); // run chance
@@ -61,14 +90,15 @@ public class Battle {
         System.out.println("You can:");
         System.out.println("1. Attack");
         System.out.println("2. Run");
+        System.out.println("3. Catch");
     }
 
     public void DrawAttacks(Pokemon poke) {
         Moves[] moves = poke.getMoves();
         System.out.println("1."+moves[0].getName());
-        System.out.println(moves[0].getType()+moves[0].getMvPower()+moves[0].getType());
+        System.out.println(moves[0].getType()+moves[0].getMvPower()+moves[0].getType()+moves[0].getEle());
         System.out.println("2."+moves[1].getName());
-        System.out.println(moves[1].getType()+moves[1].getMvPower()+moves[1].getType());
+        System.out.println(moves[1].getType()+moves[1].getMvPower()+moves[1].getType()+moves[1].getEle());
     }
 
     public String DrawHP(double maxHP, double currentHP) {
@@ -114,5 +144,15 @@ public class Battle {
         int y = d.nextInt(15);
         modifier *= (0.8 + (y / 100));
         return modifier;
+    }
+    public double dmg(Moves atkMove,Pokemon poke1,Pokemon poke2){
+        PhysDmg hit = new PhysDmg();
+        SpeDmg spell = new SpeDmg();
+        if(atkMove.getType() == "Phys"){
+            return hit.attack(atkMove,poke1,poke2,crit(atkMove.getName()));
+        }
+        else{
+            return spell.attack(atkMove,poke1,poke2,crit(atkMove.getName()));
+        }
     }
 }

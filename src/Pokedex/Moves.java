@@ -11,12 +11,12 @@ public class Moves {
     private int pp;
     private String ele;
 
-    public String getName() {
-        return name;
+    public String getEle() {
+        return ele;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
     public int getPp() {
@@ -24,42 +24,25 @@ public class Moves {
         return pp;
     }
 
-    public void setPp(int pp) {
-        this.pp = pp;
-    }
 
     public int getPriority() {
         return priority;
     }
 
-    public void setPriority(int priority) {
-        this.priority = priority;
-    }
 
     public int getMvPower() {
         return mvPower;
     }
 
-    public void setMvPower(int mvPower) {
-        this.mvPower = mvPower;
-    }
 
     public String getType() {
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
 
     public int getMvAcc() {
         return mvAcc;
     }
-
-    public void setMvAcc(int mvAcc) {
-        this.mvAcc = mvAcc;
-    }
-
 
 
     private String[] names = {"Quick Attack", "Tackle", "Hyper Beam", "Heavy Slam", "Aerial Ace",
@@ -71,7 +54,7 @@ public class Moves {
     private String[] types = {"Phys", "Phys", "Spec", "Phys", "Phys", "Spec", "Spec", "Spec", "Phys", "Spec", "Phys",
             "Phys", "Phys", "Spec", "Phys", "Phys", "Phys", "Spec", "Phys"};
     private int[] pps = {10,10,2,5,5,5,4,4,5,2,10,7,5,5,3,2,5,5,10,20};
-
+    private String[] eles = {"Normal","Normal","Normal","Normal","Flying","Grass","Ice","Fire","Water","Water","Fighting","Normal","Bug","Electric","Electric","Ghost","Ghost","Rock","Rock","Bug"};
 
     // Constructor
     public Moves(int moveID) {
@@ -81,5 +64,6 @@ public class Moves {
         this.mvAcc = accuracies[moveID];
         this.type = types[moveID];
         this.pp = pps[moveID];
+        this.ele = eles[moveID];
     }
 }
