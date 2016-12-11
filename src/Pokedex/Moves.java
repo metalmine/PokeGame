@@ -48,7 +48,7 @@ public class Moves {
     private String[] names = {"Quick Attack", "Tackle", "Hyper Beam", "Heavy Slam", "Aerial Ace",
             "Razor Leaf", "Ice Beam", "Flame Thrower", "Liquidation", "Hydro Pump", "Vacuum Wave", "Slash", "X-Scissor",
             "Lightning Bolt", "Volt Tackle", "Sucker Punch", "Shadow Ball", "Stone Edge", "Rock Blast","Leech Life"};
-    private int[] powers = {40, 45, 60, 80, 60, 65, 80, 80, 80, 120, 40, 70, 80, 80, 140, 80, 90, 15};
+    private int[] powers = {40, 45, 120, 80, 60, 65, 80, 80, 80, 120, 40, 70, 80, 80, 140, 80, 90, 80, 40, 15};
     private int[] priorities = {2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1, 2};
     private int[] accuracies = {100,100,60,80,100,95,100,100,100,70,100,100,100,100,60,100,100,100,100,100};
     private String[] types = {"Phys", "Phys", "Spec", "Phys", "Phys", "Spec", "Spec", "Spec", "Phys", "Spec", "Phys",

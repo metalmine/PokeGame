@@ -54,7 +54,7 @@ public class Game {
                 case 1:
                     Encounter wildEncounter = new Encounter();
                     Battle wildBattle = new Battle();
-                    wildBattle.newBattle(wildEncounter.wildPoke(1), mc.getTeamID().retrievePokemon(0));
+                    wildBattle.newBattle(wildEncounter.wildPoke(1), mc.getTeamID());
                     break;
                 case 2:
                     pc(BillsPC, mc.getTeamID());
