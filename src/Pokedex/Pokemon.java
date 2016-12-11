@@ -169,7 +169,8 @@ public class Pokemon {
                 this.spA = (this.level*1.21);
                 this.spD = (this.level*1.21);
                 this.spe = (this.level*0.85);
-                this.moves[0] = Moves(0);
+                this.moves[0] =new Moves(3);
+                this.moves[1] =new Moves(5);
                 break;
             case 2:
                 this.level = 5;
@@ -184,6 +185,8 @@ public class Pokemon {
                 this.spA = (this.level*1.12);
                 this.spD = (this.level*0.94);
                 this.spe = (this.level*1.21);
+                this.moves[0] =new Moves(0);
+                this.moves[1] =new Moves(7);
                 break;
             case 3:
                 this.level = 5;
@@ -198,6 +201,8 @@ public class Pokemon {
                 this.spA = (this.level*0.94);
                 this.spD = (this.level*1.19);
                 this.spe = (this.level*0.81);
+                this.moves[0] =new Moves(8);
+                this.moves[1] =new Moves(9);
                 break;
             case 4:
                 this.level = 7;
@@ -212,6 +217,8 @@ public class Pokemon {
                 this.spA = (this.level*1.21);
                 this.spD = (this.level*1.21);
                 this.spe = (this.level*0.85);
+                this.moves[0] =new Moves(13);
+                this.moves[1] =new Moves(14);
                 break;
             case 5:
                 this.level = 9;
@@ -226,6 +233,8 @@ public class Pokemon {
                 this.spA = (this.level*0.94);
                 this.spD = (this.level*0.94);
                 this.spe = (this.level*1.66);
+                this.moves[0] =new Moves(0);
+                this.moves[1] =new Moves(1);
                 break;
             case 6:
                 this.level = 13;
@@ -240,6 +249,8 @@ public class Pokemon {
                 this.spA = (this.level*1.84);
                 this.spD = (this.level*0.67);
                 this.spe = (this.level*1.48);
+                this.moves[0] =new Moves(16);
+                this.moves[1] =new Moves(15);
                 break;
             case 7:
                 this.level = 16;
@@ -254,6 +265,8 @@ public class Pokemon {
                 this.spA = (this.level*2.20);
                 this.spD = (this.level*1.30);
                 this.spe = (this.level*1.93);
+                this.moves[0] =new Moves(16);
+                this.moves[1] =new Moves(13);
                 break;
             case 8:
                 this.level = 18;
@@ -268,6 +281,8 @@ public class Pokemon {
                 this.spA = (this.level*1.03);
                 this.spD = (this.level*1.48);
                 this.spe = (this.level*1.93);
+                this.moves[0] =new Moves(12);
+                this.moves[1] =new Moves(11);
                 break;
             case 9:
                 this.level = 21;
@@ -282,6 +297,8 @@ public class Pokemon {
                 this.spA = (this.level*0.58);
                 this.spD = (this.level*0.85);
                 this.spe = (this.level*1.30);
+                this.moves[0] =new Moves(17);
+                this.moves[1] =new Moves(18);
                 break;
             case 10:
                 this.level = 30;
@@ -296,6 +313,8 @@ public class Pokemon {
                 this.spA = (this.level*1.30);
                 this.spD = (this.level*1.30);
                 this.spe = (this.level*1.30);
+                this.moves[0] =new Moves(6);
+                this.moves[1] =new Moves(7);
                 break;
             case 11:
                 this.level = 35;
@@ -310,6 +329,8 @@ public class Pokemon {
                 this.spA = (this.level*1.21);
                 this.spD = (this.level*2.02);
                 this.spe = (this.level*0.58);
+                this.moves[0] =new Moves(2);
+                this.moves[1] =new Moves(3);
                 break;
             case 12:
                 this.level = 40;
@@ -324,6 +345,8 @@ public class Pokemon {
                 this.spA = (this.level*1.75);
                 this.spD = (this.level*2.29);
                 this.spe = (this.level*1.57);
+                this.moves[0] =new Moves(4);
+                this.moves[1] =new Moves(6);
                 break;
             case 13:
                 this.level = 1;
@@ -337,6 +360,8 @@ public class Pokemon {
                 this.def = (this.level*0.67);
                 this.spA = (this.level*0.58);
                 this.spD = (this.level*0.76);
+                this.moves[0] =new Moves(19);
+                this.moves[1] =new Moves(19);
                 this.spe = 100;
                 break;
 
